@@ -40,8 +40,8 @@
 </script>    <div class="block1">
         <div class="wrapper">
             <a class="button" href="#"></a>
-            <div class="sale">-53%</div>
-            <div class="price"><span class="old">1680р.</span><span class="new">790р.</span></div>
+            <div class="sale">-56%</div>
+            <div class="price"><span class="old">1000р.</span><span class="new">440р.</span></div>
         </div>    
     </div>
     <div class="block2">
@@ -197,12 +197,12 @@
             <div class="now">Закажите патчи для глаз<br>
                 <span class="one">Gold &amp; Snail</span><br>
                 <span class="two">со скидкой 56%</span>
-                <div class="price"><span class="old">1000р.</span><span class="new">560р.</span></div>
+                <div class="price"><span class="old">1000р.</span><span class="new">440р.</span></div>
                 <p style="font-size:20px; padding:5px 0 4px;">Осталось до конца акции:</p>
                 <div class="countbox"><div class="countbox-num"><div class="countbox-hours1"><span></span>0</div><div class="countbox-hours2"><span></span>2</div><div class="countbox-hours-text"></div></div><div class="countbox-space"></div><div class="countbox-num"><div class="countbox-mins1"><span></span>3</div><div class="countbox-mins2"><span></span>6</div><div class="countbox-mins-text"></div></div><div class="countbox-space"></div><div class="countbox-num"><div class="countbox-secs1"><span></span>5</div><div class="countbox-secs2"><span></span>0</div><div class="countbox-secs-text"></div></div></div>
 
 
-                    <form action="https://formspree.io/damage85@mail.ru" id="order_form" method="post">
+                    <form action="" id="order_form" method="post">
                     <p style="text-align: left; padding: 0 0 0 47px;">Введите Ваше имя:</p>
                     <div><input required="" name="name" type="text" placeholder="Иванова Анна"></div>
                     <p style="text-align: left; padding: 0 0 0 47px;">Введите Ваш телефон:</p>
@@ -231,7 +231,7 @@
     </div>  
 
 </body>
-<div id="overlay-popup-m1" style="display: none;"></div><div id="popup-form" class="m1modal" style="display: none;"><a class="close-m1"></a><div><div class="popup-m1-title">Вам понравилось это предложение?</div><div class="popup-m1-cont"><div class="popup-m1-text1">Мы расскажем Вам все об этом товаре, предложим наилучшие условия и ознакомим с подходящими акционными предложениями!</div><form method="POST" action="https://formspree.io/damage85@mail.ru" class="popup-m1-form"><input type="text" name="name" placeholder="Введите ваше имя" required=""><input type="text" name="phone" placeholder="Введите телефон" required=""><button>Перезвоните мне</button><input type="hidden" name="is_popup" value="1"><input type="hidden"></form><div class="popup-m1-text2">Оператор перезвонит Вам через 5-10 минут</div></div></div></div>
+<div id="overlay-popup-m1" style="display: none;"></div><div id="popup-form" class="m1modal" style="display: none;"><a class="close-m1"></a><div><div class="popup-m1-title">Вам понравилось это предложение?</div><div class="popup-m1-cont"><div class="popup-m1-text1">Мы расскажем Вам все об этом товаре, предложим наилучшие условия и ознакомим с подходящими акционными предложениями!</div><form method="POST" action="" class="popup-m1-form"><input type="text" name="name" placeholder="Введите ваше имя" required=""><input type="text" name="phone" placeholder="Введите телефон" required=""><button>Перезвоните мне</button><input type="hidden" name="is_popup" value="1"><input type="hidden"></form><div class="popup-m1-text2">Оператор перезвонит Вам через 5-10 минут</div></div></div></div>
 
 <script type="text/javascript">
     var flag = true;
@@ -255,5 +255,17 @@
     }, 100);
 });
     </script>
+    <script src="popups/js/popups.js"></script>
+    <script>
+    initPopups({
+        product : 'патчи для глаз Gold&amp;Snail', // списываем название продукта
+        lang : 'ru', // язык (пока доступны vn, ro, es, it, id, de, th)
+        wheel : false, // сообщения о покупках с разными скидками, либо только 50%
+        bgColor: 'rgba(0, 0, 0, 0.68)', // цвет фона сообщения
+        textColor : '#fff', // цвет основного текста сообщения
+        emphColor : 'cyan', // цвет выделений в сообщениях (например, 'со скидкой XX%', '' )
+        blackIcons :  false // черные или белые иконки, значения true или false
+    });
+</script>
 
 </html>
