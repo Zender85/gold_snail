@@ -294,7 +294,7 @@
 <div id="overlay-popup-m1" style="display: none;"></div>
 <div id="popup-form" class="m1modal" style="display: none;"><a class="close-m1"></a>
     <div>
-        <div class="popup-m1-title">Вам понравилось это предложение?</div>
+        <div class="popup-m1-title">Вам понравился <br> наш товар?</div>
         <div class="popup-m1-cont">
             <div class="popup-m1-text1">Мы расскажем Вам все об этом товаре, предложим наилучшие условия и ознакомим с подходящими акционными предложениями!</div>
             <form method="POST" action="" class="popup-m1-form">
@@ -310,13 +310,15 @@
 </div>
 <script type="text/javascript">
 var flag = true;
-$(window).mouseout(function(e) {
+setTimeout(function(){
+    $(window).mouseout(function(e) {
     if (e.pageY - $(window).scrollTop() < 1 && flag == true) {
         $('#overlay-popup-m1').fadeIn(300);
         $('#popup-form').fadeIn(300);
         flag = false;
     }
 })
+}, 3000)
 
 $('.close-m1').click(function() {
     $('#overlay-popup-m1').fadeOut(300);
